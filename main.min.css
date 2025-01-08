@@ -1,5 +1,20 @@
-body {
-	margin: 0
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 18px;
 }
 
 .diversion {
@@ -57,26 +72,6 @@ img {
 
 .link .t1 .h1 {
 	position: relative
-}
-
-.link .t1 .h1 img {
-	width: 646px;
-	height: 46px;
-	margin: 0 auto;
-	-o-object-fit: contain;
-	object-fit: contain
-}
-
-.link .t2 .h2 img {
-	width: 660px;
-	height: 36px;
-	margin: 0 auto
-}
-
-.diversion-title .img1 {
-	width: 188px;
-	height: 63px;
-	margin-left: 68px
 }
 
 .diversion-title.gf {
@@ -229,21 +224,6 @@ img {
 	box-shadow: -1px -1px 9px #bcbcbc
 }
 
-.diversion-tips.dj div .h3 img {
-	width: 334px;
-	height: 24px;
-	display: inline-block;
-	margin: 0 auto
-}
-
-.diversion-tips img {
-	width: 209px;
-	height: 250px;
-	vertical-align: middle;
-	-o-object-fit: contain;
-	object-fit: contain
-}
-
 .footer_text {
 	width: 100%;
 	height: 40px;
@@ -292,12 +272,6 @@ img {
 		-webkit-box-align: center
 	}
 
-	.diversion-title .img1 {
-		width: 188px;
-		height: 63px;
-		margin-left: 0
-	}
-
 	.diversion-title .gf_title {
 		width: 200px;
 		margin: 0 30px 0 0
@@ -316,22 +290,8 @@ img {
 		font-size: 22px
 	}
 
-	.link .t1 .h1 img {
-		width: 100%;
-		height: 28px;
-		-o-object-fit: contain;
-		object-fit: contain
-	}
-
 	.link .t2 {
 		font-size: 18px
-	}
-
-	.link .t2 .h2 img {
-		width: 90%;
-		height: 24px;
-		-o-object-fit: contain;
-		object-fit: contain
 	}
 
 	.liner {
@@ -356,21 +316,6 @@ img {
 		width: 30%;
 		height: 100px;
 		line-height: 100px
-	}
-
-	.diversion-tips.dj div .h3 img {
-		width: 100%;
-		max-width: 100%;
-		height: 30px;
-		display: inline-block;
-		margin: 0 auto
-	}
-
-	.diversion-tips img {
-		max-width: 100%;
-		height: 88px;
-		-o-object-fit: contain;
-		object-fit: contain
 	}
 
 	.footer_text {
@@ -483,22 +428,8 @@ img {
 		font-size: 22px
 	}
 
-	.link .t1 .h1 img {
-		width: 100%;
-		height: 32px;
-		-o-object-fit: contain;
-		object-fit: contain
-	}
-
 	.link .t2 {
 		font-size: 18px
-	}
-
-	.link .t2 .h2 img {
-		width: 80%;
-		height: 24px;
-		-o-object-fit: contain;
-		object-fit: contain
 	}
 
 	.diversion-tips {
@@ -507,10 +438,6 @@ img {
 
 	.diversion-tips .t3 {
 		width: 30%
-	}
-
-	.diversion-tips .t3 img {
-		max-width: 100%
 	}
 
 	.diversion-btn {
@@ -544,21 +471,11 @@ img {
 	.diversion-tips .t3 {
 		width: 30%
 	}
-
-	.diversion-tips .t3 img {
-		max-width: 100%
-	}
-
 }
 
 @media only screen and (min-width:415px) and (max-width:768px) {
 	.diversion-title {
 		margin-top: 10px
-	}
-
-	.diversion-title .img1 {
-		width: 188px;
-		height: 63px
 	}
 
 	.bg {
@@ -575,12 +492,6 @@ img {
 		margin-top: 10px
 	}
 
-	.diversion-title .img1 {
-		width: 188px;
-		height: 63px;
-		margin-left: 68px
-	}
-
 	.bg {
 		height: 1500px
 	}
@@ -593,12 +504,6 @@ img {
 @media only screen and (min-width:1025px) and (max-width:1366px) {
 	.diversion-title {
 		margin-top: 10px
-	}
-
-	.diversion-title .img1 {
-		width: 188px;
-		height: 63px;
-		margin-left: 68px
 	}
 
 	.bg {
