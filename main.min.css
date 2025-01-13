@@ -1,6 +1,6 @@
 body {
-font-size: 18px;
-text-align: center;
+	font-size: 18px;
+	text-align: center;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
 h2 {
 	font-weight: bold;
 	font-size: 18px;
-        margin: 0px 0;
+	margin: 0px 0;
 }
 
 .diversion {
@@ -209,7 +209,7 @@ img {
 	font-size: 18px;
 	text-align: center;
 	line-height: 30px;
-	width: 881px;
+	width: 1050px;
 	margin: 50px auto
 }
 
@@ -312,6 +312,17 @@ img {
 		width: 30%;
 		height: 100px;
 		line-height: 100px
+	}
+
+
+	.other_box .o2 {
+		width: 100%;
+		margin: 20px auto;
+		flex-wrap: wrap
+	}
+
+	.other_box .o2 img {
+		transform: scale(.6)
 	}
 
 	.footer_text {
@@ -436,6 +447,16 @@ img {
 		width: 30%
 	}
 
+	.other_box .o2 {
+		width: 100%;
+		flex-wrap: wrap
+	}
+
+	.other_box .o2 img {
+		transform: scale(.6)
+	}
+
+
 	.diversion-btn {
 		width: 48%
 	}
@@ -494,6 +515,15 @@ img {
 
 	.diversion-tips {
 		margin-bottom: 10px
+	}
+
+	.other_box .o2 {
+		width: 100%;
+		flex-wrap: wrap
+	}
+
+	.other_box .o2 div {
+		margin: 10px
 	}
 }
 
