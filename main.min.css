@@ -91,7 +91,7 @@ img {
 	height: auto;
 	padding-bottom: 170px;
 	padding-top: 15px;
-	background: url(./asset/bg.png) no-repeat top;
+	background: url(./asset/banner.webp) no-repeat top;
 	background-size: cover
 }
 
@@ -213,11 +213,15 @@ img {
 
 .diversion-tips {
 	font-size: 18px;
-	text-align: center;
+	text-align: -webkit-left;
 	line-height: 30px;
 	width: 1050px;
-	margin: 50px auto
+	margin: 30px auto
 }
+
+.other_box .o2 {
+	margin: 50px auto
+	}
 
 .diversion-tips .t3 {
 	width: 267px;
