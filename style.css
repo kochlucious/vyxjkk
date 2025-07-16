@@ -1,0 +1,352 @@
+:root {
+	--primary: #2B2521;
+	/* Dark brown */
+	--secondary: #8A744F;
+	/* Medium brown */
+	--accent: #E2B354;
+	/* Gold */
+	--dark: #1a1a2e;
+	--light: #f8f9fa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #2B2521;
+	color: black;
+	line-height: 1.6;
+}
+
+/* New Header Styles */
+header {
+	height: 111px;
+	background: url('C:\Users\KS\Desktop\100\img/menu_bg.png') no-repeat center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo-img {
+	width: 300px;
+	height: 86px;
+	float: left;
+	background: url('C:\Users\KS\Desktop\100\img/menu_bg/logo.png') no-repeat center center;
+	background-size: contain;
+	margin-right: 15px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 2rem auto;
+	padding: 0 20px;
+}
+
+.casino-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 25px;
+	margin-top: 2rem;
+}
+
+.casino-card {
+	background: white;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+}
+
+.casino-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+	background: linear-gradient(135deg, var(--primary), var(--secondary));
+	color: white;
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.casino-logo {
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+	margin-right: 1rem;
+	background: white;
+	padding: 2px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.casino-name {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+.stars {
+	color: var(--accent);
+	margin-right: 5px;
+}
+
+.card-body {
+	padding: 1.5rem;
+}
+
+.bonus-highlight {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--primary);
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.bonus-highlight i {
+	margin-right: 10px;
+	color: var(--accent);
+}
+
+.bonus-details {
+	margin-bottom: 1.5rem;
+	color: #555;
+}
+
+.promo-code {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.code-label {
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+.code-value {
+	background: linear-gradient(to right, var(--secondary), var(--accent));
+	padding: 8px 15px;
+	border-radius: 50px;
+	font-family: monospace;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+	color: var(--primary);
+}
+
+.code-value:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(138, 116, 79, 0.4);
+}
+
+.code-value::after {
+	content: "copy";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(43, 37, 33, 0.8);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	border-radius: 50px;
+	font-size: 0.8rem;
+}
+
+.code-value:hover::after {
+	opacity: 1;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 25px;
+	border-radius: 50px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	background: linear-gradient(135deg, var(--secondary), var(--primary));
+	color: white;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 25px rgba(138, 116, 79, 0.4);
+}
+
+.badge {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 50px;
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-left: 10px;
+}
+
+.badge-hot {
+	background: linear-gradient(135deg, var(--accent), #d18f2a);
+	color: var(--primary);
+}
+
+.badge-new {
+	background: linear-gradient(135deg, var(--secondary), #6d5b3a);
+	color: white;
+}
+
+.badge-vip {
+	background: linear-gradient(135deg, var(--accent), var(--secondary));
+	color: var(--primary);
+}
+
+.text-section {
+	margin-top: 2rem;
+	padding: 2rem;
+	border-radius: 16px;
+}
+
+/* Text Section with Uniform Heading Sizes */
+.text-section h1,
+.text-section h2,
+.text-section h3,
+.text-section h4 {
+	font-size: 20px;
+	margin-bottom: 1rem;
+}
+
+.text-section h1,
+.text-section h2,
+.text-section h3,
+.text-section h4,
+.text-section h5,
+.text-section h6,
+.text-section p {
+	color: white;
+}
+
+.text-section h1 {
+	color: var(--secondary);
+	margin-bottom: 1.5rem;
+}
+
+.text-section h2 {
+	color: var(--secondary);
+	margin: 1.2rem 0;
+}
+
+.text-section h3 {
+	color: var(--secondary);
+	margin: 1rem 0;
+}
+
+footer {
+	background: linear-gradient(135deg, var(--primary), #1a1613);
+	color: white;
+	padding: 2rem 0;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.copyright {
+	opacity: 0.8;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+	.casino-grid {
+		grid-template-columns: 1fr;
+	}
+
+	header {
+		height: auto;
+		padding: 1rem;
+	}
+
+	.header-content {
+		flex-direction: column;
+		align-items: center;
+		/* Changed from flex-start to center */
+		justify-content: center;
+		/* Added to center vertically */
+		text-align: center;
+		/* Added for better text centering */
+	}
+
+	.logo-container {
+		margin-bottom: 1rem;
+		width: 100%;
+		/* Added to ensure full width */
+		display: flex;
+		justify-content: center;
+		/* Center the logo horizontally */
+	}
+
+	.logo-img {
+		width: 300px;
+		/* Keep the same width */
+		background-size: contain;
+		background-position: center center;
+		/* Center the logo image */
+		margin-right: 0;
+		/* Remove right margin in mobile */
+		float: none;
+		/* Remove float in mobile */
+	}
+}
