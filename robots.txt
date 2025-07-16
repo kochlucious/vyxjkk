@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://cryptobet2u.com/sitemap.xml
