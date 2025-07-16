@@ -25,7 +25,7 @@ body {
 /* New Header Styles */
 header {
 	height: 111px;
-	background: url('C:\Users\KS\Desktop\100\img/menu_bg.png') no-repeat center center;
+	background: url('./img/menu_bg.png') no-repeat center center;
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -62,7 +62,7 @@ header::before {
 	width: 300px;
 	height: 86px;
 	float: left;
-	background: url('C:\Users\KS\Desktop\100\img/menu_bg/logo.png') no-repeat center center;
+	background: url('/img/logo.png') no-repeat center center;
 	background-size: contain;
 	margin-right: 15px;
 }
