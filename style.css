@@ -301,7 +301,7 @@ header::before {
 }
 
 footer {
-	background: linear-gradient(135deg, var(--primary), #1a1613);
+	url('https://cryptobet2u.com/img/menu_bg.png') no-repeat center center;
 	color: white;
 	padding: 2rem 0;
 	text-align: center;
